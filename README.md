@@ -1,2 +1,3 @@
 # microfrontend
-My repository for my bachelor thesis using microfrontends. 
+
+My repository for my bachelor thesis using microfrontends.
