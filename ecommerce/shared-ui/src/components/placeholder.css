@@ -1,0 +1,69 @@
+/* 
+ * Platzhalter-Komponenten für Microfrontend Loading States
+ * Teil des gemeinsamen Design Systems
+ */
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-8);
+  background-color: var(--color-gray-50);
+  border: 2px dashed var(--color-gray-300);
+  border-radius: var(--border-radius-lg);
+  color: var(--color-gray-600);
+  font-family: var(--font-family-sans);
+  min-height: 120px;
+  transition: all 0.3s ease;
+}
+
+.placeholder:hover {
+  border-color: var(--color-primary-light);
+  background-color: var(--color-primary-50);
+}
+
+.placeholder small {
+  margin-top: var(--spacing-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  font-weight: var(--font-weight-normal);
+}
+
+/* Debug-Info für Development */
+.design-system-debug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: var(--font-size-xs);
+  z-index: 1000;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  border-radius: 0 0 var(--border-radius-sm) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Utility Classes für Platzhalter */
+.placeholder-header {
+  border-color: var(--color-primary-light);
+  background-color: var(--color-primary-25);
+}
+
+.placeholder-catalog {
+  border-color: var(--color-blue-300);
+  background-color: var(--color-blue-25);
+}
+
+.placeholder-recommendations {
+  border-color: var(--color-green-300);
+  background-color: var(--color-green-25);
+}
+
+.placeholder-cart {
+  border-color: var(--color-orange-300);
+  background-color: var(--color-orange-25);
+} 

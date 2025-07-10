@@ -5,6 +5,18 @@
   --color-primary-light: #a78bfa;
   --color-primary-dark: #7c3aed;
   --color-primary-hover: #7c3aed;
+  --color-primary-50: #faf5ff;
+  --color-primary-25: #fefbff;
+  
+  /* Secondary Colors */
+  --color-blue-25: #f0f9ff;
+  --color-blue-300: #93c5fd;
+  
+  --color-green-25: #f0fdf4;
+  --color-green-300: #86efac;
+  
+  --color-orange-25: #fffbeb;
+  --color-orange-300: #fdba74;
   
   /* Neutral Colors */
   --color-white: #ffffff;
