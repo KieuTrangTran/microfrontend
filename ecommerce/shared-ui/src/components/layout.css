@@ -1,0 +1,135 @@
+/* Layout Components */
+
+/* Global Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-gray-900);
+  background-color: var(--color-gray-50);
+  min-height: 100vh;
+}
+
+/* Container System (1440px Desktop) */
+.container {
+  max-width: var(--container-max-width); /* 1440px */
+  margin: 0 auto;
+  padding: 0 var(--container-padding); /* 2rem */
+  width: 100%;
+}
+
+.content-container {
+  max-width: var(--content-max-width); /* 1200px */
+  margin: 0 auto;
+  padding: 0 var(--spacing-8);
+  width: 100%;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--spacing-6);
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+
+/* E-Commerce Layout - Hauptstruktur */
+.ecommerce-layout {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "catalog recommendations cart"
+    "footer footer footer";
+  grid-template-columns: 1fr 300px 350px;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--spacing-6);
+  min-height: 100vh;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-4);
+}
+
+.header-area { grid-area: header; }
+.catalog-area { grid-area: catalog; }
+.recommendations-area { grid-area: recommendations; }
+.cart-area { grid-area: cart; }
+.footer-area { grid-area: footer; }
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.gap-2 { gap: var(--spacing-2); }
+.gap-4 { gap: var(--spacing-4); }
+.gap-6 { gap: var(--spacing-6); }
+.gap-8 { gap: var(--spacing-8); }
+
+/* Spacing Utilities */
+.p-0 { padding: var(--spacing-0); }
+.p-2 { padding: var(--spacing-2); }
+.p-4 { padding: var(--spacing-4); }
+.p-6 { padding: var(--spacing-6); }
+.p-8 { padding: var(--spacing-8); }
+
+.m-0 { margin: var(--spacing-0); }
+.m-2 { margin: var(--spacing-2); }
+.m-4 { margin: var(--spacing-4); }
+.m-6 { margin: var(--spacing-6); }
+.m-8 { margin: var(--spacing-8); }
+
+.mb-4 { margin-bottom: var(--spacing-4); }
+.mb-6 { margin-bottom: var(--spacing-6); }
+.mb-8 { margin-bottom: var(--spacing-8); }
+
+.mt-4 { margin-top: var(--spacing-4); }
+.mt-6 { margin-top: var(--spacing-6); }
+.mt-8 { margin-top: var(--spacing-8); } 
